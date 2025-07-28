@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Supabricks Logo](/supabicks.PNG)
+![Supabricks Logo](/supabricks.png)
 
 **A Supabase-style API layer for Databricks Unity Catalog**
 
@@ -78,7 +78,7 @@ Supabricks provides a REST API interface to Databricks Unity Catalog using FastA
 2. Create a `.env` file with your Databricks credentials:
    ```
    DATABRICKS_HOST=https://your-databricks-instance.cloud.databricks.com/
-   DATABRICKS_TOKEN=your-personal-access-token
+   # For security, supply your token in API calls via Authorization header
    ENABLE_CLEARTUNNEL=true
    DATABRICKS_WAREHOUSE_ID=your-sql-warehouse-id
    ```
@@ -221,7 +221,7 @@ Or create a shell script that captures timing information for each API call.
 
 ## ClearTunnel Integration
 
-Supabricks v3.2 includes [ClearTunnel](https://github.com/cleartunnel/cleartunnel) support to expose the FastAPI app publicly from within Databricks Apps, which do not allow incoming ports by default. This solves the accessibility issue when using Supabricks inside the Databricks environment.
+Supabricks v3.2 includes ClearedTunnel support to expose the FastAPI app publicly from within Databricks Apps, which do not allow incoming ports by default. This solves the accessibility issue when using Supabricks inside the Databricks environment.
 
 ## License
 
