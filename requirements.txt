@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+pandas
+pyarrow
+databricks-sdk
+databricks-sql-connector
+requests
+python-dotenv
+pycloudflared

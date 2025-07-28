@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# Virtual environment
+/venv/
+
+# Test files
+test_api.sh
+test.out
+
+# Documentation
+Supabricks_Spec.pdf
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Local development settings
+.idea/
+.vscode/
+*.swp
+*.swo
