@@ -12,6 +12,22 @@
 
 Supabricks provides a REST API interface to Databricks Unity Catalog using FastAPI, enabling simple CRUD operations on Delta tables. It's designed to make Databricks data accessible through a clean, RESTful interface similar to Supabase.
 
+## Why It Makes Sense
+
+While Databricks already provides its own APIs, Supabricks offers several compelling advantages:
+
+- **Simplified Developer Experience**: Provides a clean, RESTful interface that follows familiar patterns similar to modern API services like Supabase, making it more accessible for developers who may not be familiar with Databricks' specific APIs.
+
+- **Standardized Access Pattern**: Organizes operations around tables as resources with standard HTTP methods (GET, POST, PUT, DELETE) mapping directly to CRUD operations, creating a more intuitive interface than working with raw SQL endpoints.
+
+- **Reduced Integration Complexity**: Abstracts away Databricks-specific details like catalog/schema navigation, connection management, and SQL query construction, significantly reducing the learning curve for new developers.
+
+- **Controlled Data Access**: Provides a secure way to expose specific Databricks functionality to applications without granting full workspace access, perfect for scenarios requiring limited, controlled access to data.
+
+- **Simplified Authentication**: Handles Databricks PAT authentication in a way that's familiar to REST API users while maintaining security.
+
+- **External Accessibility**: The ClearTunnel feature solves the common challenge of exposing Databricks services externally without complex networking setup, making it ideal for development, demos, or quick sharing.
+
 ## Features
 
 - **RESTful API for Delta Tables**: Access and manipulate Delta tables through standard HTTP methods
